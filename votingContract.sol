@@ -67,7 +67,7 @@ contract Voting {
         success = true; 
     }
 
-    function viewVotes(address _candidate) public view onlyAdmin returns(uint) {
+    function viewVotes(address _candidate) public view onlyAdmin returns(uint256) {
         if(block.timestamp >= endTime) return candidateVote[_candidate];
     }
 
